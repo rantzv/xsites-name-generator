@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
   styleUrls: ['./user-details-generator.component.css']
 })
 export class UserDetailsGeneratorComponent {
-  private generatedUser: AntelopeUser;
+  generatedUser: AntelopeUser;
 
   constructor(private http: HttpClient) { 
   }

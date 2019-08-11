@@ -1,0 +1,14 @@
+<div *ngIf=!!generatedUser>
+
+<p>
+Here is your generated details:
+</p>
+
+<label>First Name: </label><span>{{generatedUser.firstName}}</span><br>
+<label>Last Name: </label><span>{{generatedUser.lastName}}</span><br>
+<label>Email: </label><span>{{generatedUser.email}}</span><br>
+<label>Gender: </label><span>{{generatedUser.gender}}</span><br>
+</div>
+
+<br>
+<button (click)="generateUserDetails()">Generate</button>

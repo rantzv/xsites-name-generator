@@ -4,6 +4,7 @@ export class AntelopeUser {
   lastName: string
   phone: string
   country: string
+  gender: string
 
   constructor() {
     

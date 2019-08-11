@@ -18,9 +18,9 @@ export class UserDetailsGeneratorComponent {
   generateUserDetails() {
     this.http.get('https://uinames.com/api/?region=united%20states').subscribe(randomData => {
         this.generatedUser = new AntelopeUser();
-        this.generatedUser.firstName = randomData.name;
-        this.generatedUser.lastName = randomData.surname;
-        this.generatedUser.gender = randomData.gender;
+        this.generatedUser.firstName = randomData['name'];
+        this.generatedUser.lastName = randomData['surname'];
+        this.generatedUser.gender = randomData['gender'];
         this.generatedUser.email = this.generateEmail();
     });
 
